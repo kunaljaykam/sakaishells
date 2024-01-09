@@ -11,11 +11,11 @@ if is_mariadb_installed; then
 else
     echo "Installing MariaDB server..."
     sudo apt-get update
-    sudo apt-get install mariadb-server -y
+    sudo apt-get install mariadb-server mariadb-client -y
 fi
 
 # Start MariaDB service
-sudo service mysql start
+sudo service mysql restart
 
 # Optionally, secure the MariaDB installation
 # Uncomment the next line to run the secure installation
