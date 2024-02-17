@@ -36,6 +36,10 @@ else
     mvn_installed=true
 fi
 
+#check if sakai.properites file exists in sakai-home
+
+
+
 # Proceed only if both Java and Maven are installed
 if [ "$java_installed" = true ] && [ "$mvn_installed" = true ]; then
     # Check if Tomcat directory exists
