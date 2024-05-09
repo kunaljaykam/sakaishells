@@ -9,7 +9,7 @@ SAKAI_CODEBASE_DIR="/home/kunaljaykam/sakaiproject/sakai"
 SAKAI_HOME="/home/kunaljaykam/sakaiproject/sakai-home"
 
 # Tomcat version
-TOMCAT_VERSION="9.0.85"
+TOMCAT_VERSION="9.0.88"
 
 # Path to the Tomcat directory
 TOMCAT_DIR="/home/kunaljaykam/sakaiproject/apache-tomcat-$TOMCAT_VERSION"
