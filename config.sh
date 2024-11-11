@@ -1,19 +1,11 @@
 #!/bin/bash
 
-# Modify the following paths according to your local environment setup.
+# Define the base path for sakaiproject folder where we keep sakai codebase, sakai-home, and tomcat.
+BASE_PATH="/home/kunaljaykam/sakaiproject"
 
-# Path to the Sakai codebase directory
-SAKAI_CODEBASE_DIR="/home/kunaljaykam/sakaiproject/sakai"
-
-# Path to the Sakai home directory
-SAKAI_HOME="/home/kunaljaykam/sakaiproject/sakai-home"
-
-# Tomcat version
+# Paths defined with the base path
+SAKAI_CODEBASE_DIR="$BASE_PATH/sakai"
+SAKAI_HOME="$BASE_PATH/sakai-home"
 TOMCAT_VERSION="9.0.89"
-
-# Path to the Tomcat directory
-TOMCAT_DIR="/home/kunaljaykam/sakaiproject/apache-tomcat-$TOMCAT_VERSION"
-
-# URL to download Tomcat
+TOMCAT_DIR="$BASE_PATH/apache-tomcat-$TOMCAT_VERSION"
 TOMCAT_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.zip"
-
